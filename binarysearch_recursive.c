@@ -3,8 +3,8 @@
 int binarysearch(int arr[],int n,int key,int start,int end){
     int mid = (start+end)/2;
     if(start<=end){
-               if(arr[mid]<key) binarysearch(arr,n,key,mid+1,end);
-               else if(arr[mid]>key) binarysearch(arr,n,key,start,mid-1);
+               if(arr[mid]<key) return  binarysearch(arr,n,key,mid+1,end);
+               else if(arr[mid]>key) return binarysearch(arr,n,key,start,mid-1);
                else return mid;
 
     }
